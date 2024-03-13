@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Truculenta:regular&display=swap");
+
+@import "_nullstyle";
+
+
+body{
+   background: #302c2c;
+   font-family: "Truculenta";
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   overflow: clip;
+   min-height: 100%;
+   margin: 0px auto;
+}
+
+[class*="__container"]{
+   margin: 0 auto;
+   max-width: 1230px;
+   padding: 0px 0.9375rem;
+   height: 1920px;
+}
+
+.calc{
+   margin-top: 150px;
+   height: 500px;
+   width:  400px;
+   background: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 25px;
+   box-shadow: 5px 5px 0px #000;
+   border: 7px solid #000;
+}
+
+
+.input{
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   width: 313px;
+   height: 50px;
+   background: #fff;
+   font-size: 35px;
+   border-radius: 15px;
+   border: 5px solid #000;
+   transition: all .3s ease 0s;
+   background: #8f8f8f;
+   color: #fff;
+   &:hover{
+      transition: all .3s ease 0s;
+      background: #6e6e6e;
+   }
+}
+
+.btn {
+   &__menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 15px;
+      max-width: 350px;
+      margin-top: 25px;
+   }
+
+   &__number {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 240px;
+      justify-content: center;
+      gap: 15px;
+   }
+
+   &__formul {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 10px;
+      .btn{
+         width: 58px;
+         height: 58px;
+      }
+   }
+}
+.btn{
+   position: relative;
+   width: 70px;
+   height: 70px;
+   font-size: 45px;
+   border-radius: 15px;
+   border: 5px solid #000;
+   transition: all .3s ease 0s;
+   background: #464646;
+   color: #fff;
+   box-shadow: 3px 3px 0px #000;
+   &:hover{
+      transition: all .3s ease 0s;
+      background: #6e6e6e;
+   }
+   &:active{
+      transition: all .3s ease 0s;
+      font-size: 40px;
+      background: #464646;
+      box-shadow: 0px 0px 0px #000;
+      top: 3px;
+      left: 3px;
+   }
+}

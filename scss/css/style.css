@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Truculenta:regular&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  font-family: "Plus Jakarta Sans";
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  scroll-behavior: smooth;
+  scroll-padding-top: 35px;
+}
+
+body {
+  background-color: #fff;
+  height: 100%;
+  line-height: 0.875rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+body {
+  background: #302c2c;
+  font-family: "Truculenta";
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  min-height: 100%;
+  margin: 0px auto;
+}
+
+[class*=__container] {
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 0px 0.9375rem;
+  height: 1920px;
+}
+
+.calc {
+  margin-top: 150px;
+  height: 500px;
+  width: 400px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: 5px 5px 0px #000;
+  border: 7px solid #000;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 313px;
+  height: 50px;
+  background: #fff;
+  font-size: 35px;
+  border-radius: 15px;
+  border: 5px solid #000;
+  transition: all 0.3s ease 0s;
+  background: #8f8f8f;
+  color: #fff;
+}
+.input:hover {
+  transition: all 0.3s ease 0s;
+  background: #6e6e6e;
+}
+
+.btn__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  max-width: 350px;
+  margin-top: 25px;
+}
+.btn__number {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 240px;
+  justify-content: center;
+  gap: 15px;
+}
+.btn__formul {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+.btn__formul .btn {
+  width: 58px;
+  height: 58px;
+}
+
+.btn {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  font-size: 45px;
+  border-radius: 15px;
+  border: 5px solid #000;
+  transition: all 0.3s ease 0s;
+  background: #464646;
+  color: #fff;
+  box-shadow: 3px 3px 0px #000;
+}
+.btn:hover {
+  transition: all 0.3s ease 0s;
+  background: #6e6e6e;
+}
+.btn:active {
+  transition: all 0.3s ease 0s;
+  font-size: 40px;
+  background: #464646;
+  box-shadow: 0px 0px 0px #000;
+  top: 3px;
+  left: 3px;
+}
