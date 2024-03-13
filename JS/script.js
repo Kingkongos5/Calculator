@@ -14,7 +14,12 @@ function inputText(e) {
       if (input.textContent.length > 0) {
          let inputValue = input.textContent.slice(0, -1);
          input.textContent = inputValue;
-         savedValue = input.textContent;
+         if (what == 0){
+            savedValue = input.textContent;
+         }
+         if (what != 0){
+            savedValueTwo = input.textContent;
+         }
       }
 
 
@@ -40,7 +45,12 @@ function inputDel(){
    if (input.textContent.length > 0) {
       let inputValue = input.textContent.slice(0, -1);
       input.textContent = inputValue;
-      savedValue = input.textContent;
+      if (what == 0){
+         savedValue = input.textContent;
+      }
+      if (what != 0){
+         savedValueTwo = input.textContent;
+      }
    }
 }
 
